@@ -118,3 +118,16 @@ The water surface is generated with interpolation of data voids to ensure that a
 - Statistics: Count
 - Ref Layer: `/QC/tmp_10mRefGrid.tif`
 - Save
+
+#### 10. Calculate Hex Layer
+```python
+import glob
+import subprocess
+from tqdm import tqdm
+
+lasifiles = glob.glob('*.laz')
+for lasif in tqdm(lasifiles, desc="Processing files"):
+    call = 'pdal density '+lasif+' -o '+lasif+'.sqlite -f SQLite --filters.hexbin.edge_size=2'
+    subprocess.run(call, shell=True)
+
+```
