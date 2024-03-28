@@ -1,7 +1,9 @@
 # QC ALB QGIS Process Documentation
 This workflow will generate a set of rasters needed to carry out a minimum quality control of an ALB point cloud. 
+
 The workflow is based on QGIS >= 3.36
 ALB delivery according to current version "Produktspesifikasjon Punktsky"
+No use of æøå in folderpath
 
 Abbrivations: 
     QPT = QGIS Processing Toolbox (Right hand side panel)

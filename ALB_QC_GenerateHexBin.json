@@ -1,0 +1,6 @@
+[
+    "C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/alb_copc_pointcloud.vpc",
+    {
+        "type" : "filters.hexbin"
+    }
+]
