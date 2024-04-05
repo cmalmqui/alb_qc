@@ -100,7 +100,7 @@ In order to evaluate the density requirement we'll generate a 2x2m density plot 
 From the 2m density plot we'll generate a binary plot with 1 indicating density above 5p/m2 in the depth range from 1.5 to 2.5m below the surface.
 
 - Tool = **QGM | Raster > Raster Calculator**
-- Raster Calculation Expression: `if (("topobathy_2m_density@1" >= 20) AND (("waterdepth_1m@1"  >=  1.5) AND ("waterdepth_1m@1"  <=  2.5)),1,0)`
+- Raster Calculation Expression: `if (("topobathy_2m_density@1" >= 20) AND (("waterdepth_1m@1"  >=  0.5) AND ("waterdepth_1m@1"  <=  2.5)),1,0)`
 - Save Result Layer to `/QC/topobathy_2m_density_OK_at_2mDepth.tif`
 
 ### 9. Calculate Density Binary Plot 10m Aggregated

@@ -1,6 +1,12 @@
 [
-    "C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/alb_copc_pointcloud.vpc",
+    "C:/_SANDBOX/20240311_ALB/Dev/QC/liten_psky.vpc",
+    {   
+        "type" : "filters.range",
+        "limits" : "Classification[2:2,40:40]"
+    },
     {
-        "type" : "filters.hexbin"
+        "type" : "filters.hexbin",
+        "edge_length" : 2.0,
+        "threshold" : 5
     }
 ]

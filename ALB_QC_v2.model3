@@ -1,961 +1,1219 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option name="children" type="Map">
-    <Option name="gdal:contour_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+  <Option type="Map" name="children">
+    <Option type="Map" name="gdal:contour_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="gdal:contour" type="QString"/>
-      <Option name="color" value="" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="938" type="double"/>
-        <Option name="component_pos_y" value="468" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="gdal:contour" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="938" type="double" name="component_pos_x"/>
+        <Option value="468" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option name="component_description" value="### 6. Generate Depth Contours" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="812" type="double"/>
-      <Option name="component_pos_y" value="383" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="### 6. Generate Depth Contours" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="812" type="double" name="component_pos_x"/>
+      <Option value="413" type="double" name="component_pos_y"/>
+      <Option value="236" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option name="id" value="gdal:contour_1" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="/QC/waterdepth_1m.shp" type="Map">
-          <Option name="child_id" value="gdal:contour_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="gdal:contour_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="/QC/waterdepth_1m.shp">
+          <Option value="gdal:contour_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
           </Option>
-          <Option name="component_description" value="/QC/waterdepth_1m.shp" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="1048" type="double"/>
-          <Option name="component_pos_y" value="375" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
-          <Option name="default_value" type="Map">
-            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
-            <Option name="create_options" type="Map">
-              <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option value="/QC/waterdepth_1m.shp" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="1422" type="double" name="component_pos_x"/>
+          <Option value="425" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="windows-1252" type="QString" name="fileEncoding"/>
             </Option>
-            <Option name="sink" type="Map">
-              <Option name="active" value="true" type="bool"/>
-              <Option name="type" value="1" type="int"/>
-              <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/waterdepth_1m.shp" type="QString"/>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/waterdepth_1m.shp" type="QString" name="val"/>
             </Option>
           </Option>
-          <Option name="mandatory" value="true" type="bool"/>
-          <Option name="name" value="/QC/waterdepth_1m.shp" type="QString"/>
-          <Option name="output_name" value="OUTPUT" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="/QC/waterdepth_1m.shp" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="BAND" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BAND">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="CREATE_3D" type="List">
+        <Option type="List" name="CREATE_3D">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
           </Option>
         </Option>
-        <Option name="EXTRA" type="List">
+        <Option type="List" name="EXTRA">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="FIELD_NAME" type="List">
+        <Option type="List" name="FIELD_NAME">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="ELEV" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="ELEV" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="IGNORE_NODATA" type="List">
+        <Option type="List" name="IGNORE_NODATA">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" value="gdal:rastercalculator_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option value="gdal:rastercalculator_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INTERVAL" type="List">
+        <Option type="List" name="INTERVAL">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1" type="double"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="double" name="static_value"/>
           </Option>
         </Option>
-        <Option name="NODATA" type="List">
+        <Option type="List" name="NODATA">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="OFFSET" type="List">
+        <Option type="List" name="OFFSET">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="0" type="double"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="double" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="gdal:rastercalculator_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+    <Option type="Map" name="gdal:rastercalculator_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="gdal:rastercalculator" type="QString"/>
-      <Option name="color" value="" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="718" type="double"/>
-        <Option name="component_pos_y" value="360" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="gdal:rastercalculator" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="718" type="double" name="component_pos_x"/>
+        <Option value="360" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option name="component_description" value="### 5. Calculate Water Depth" type="QString"/>
-      <Option name="component_height" value="68" type="double"/>
-      <Option name="component_pos_x" value="573" type="double"/>
-      <Option name="component_pos_y" value="329" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="### 5. Calculate Water Depth" type="QString" name="component_description"/>
+      <Option value="35" type="double" name="component_height"/>
+      <Option value="581.5" type="double" name="component_pos_x"/>
+      <Option value="312.5" type="double" name="component_pos_y"/>
+      <Option value="217.00000000000003" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option name="id" value="gdal:rastercalculator_1" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="/QC/waterdepth_1m.tif" type="Map">
-          <Option name="child_id" value="gdal:rastercalculator_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="gdal:rastercalculator_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="/QC/waterdepth_1m.tif">
+          <Option value="gdal:rastercalculator_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
           </Option>
-          <Option name="component_description" value="/QC/waterdepth_1m.tif" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="814" type="double"/>
-          <Option name="component_pos_y" value="314" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
-          <Option name="default_value" type="Map">
-            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
-            <Option name="create_options" type="Map">
-              <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option value="/QC/waterdepth_1m.tif" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="1422" type="double" name="component_pos_x"/>
+          <Option value="387" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="windows-1252" type="QString" name="fileEncoding"/>
             </Option>
-            <Option name="sink" type="Map">
-              <Option name="active" value="true" type="bool"/>
-              <Option name="type" value="1" type="int"/>
-              <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/waterdepth_1m.tif" type="QString"/>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/waterdepth_1m.tif" type="QString" name="val"/>
             </Option>
           </Option>
-          <Option name="mandatory" value="true" type="bool"/>
-          <Option name="name" value="/QC/waterdepth_1m.tif" type="QString"/>
-          <Option name="output_name" value="OUTPUT" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="/QC/waterdepth_1m.tif" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="BAND_A" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BAND_A">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="BAND_B" type="List">
+        <Option type="List" name="BAND_B">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="BAND_C" type="List">
+        <Option type="List" name="BAND_C">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="BAND_D" type="List">
+        <Option type="List" name="BAND_D">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="BAND_E" type="List">
+        <Option type="List" name="BAND_E">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="BAND_F" type="List">
+        <Option type="List" name="BAND_F">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="EXTENT_OPT" type="List">
+        <Option type="List" name="EXTENT_OPT">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="2" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="2" type="int" name="static_value"/>
           </Option>
         </Option>
-        <Option name="EXTRA" type="List">
+        <Option type="List" name="EXTRA">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="FORMULA" type="List">
+        <Option type="List" name="FORMULA">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="B-A" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="B-A" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT_A" type="List">
+        <Option type="List" name="INPUT_A">
           <Option type="Map">
-            <Option name="child_id" value="pdal:exportraster_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option value="pdal:exportraster_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT_B" type="List">
+        <Option type="List" name="INPUT_B">
           <Option type="Map">
-            <Option name="child_id" value="pdal:exportrastertin_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option value="pdal:exportrastertin_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT_C" type="List">
+        <Option type="List" name="INPUT_C">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT_D" type="List">
+        <Option type="List" name="INPUT_D">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT_E" type="List">
+        <Option type="List" name="INPUT_E">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT_F" type="List">
+        <Option type="List" name="INPUT_F">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="NO_DATA" type="List">
+        <Option type="List" name="NO_DATA">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="OPTIONS" type="List">
+        <Option type="List" name="OPTIONS">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="PROJWIN" type="List">
+        <Option type="List" name="PROJWIN">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="RTYPE" type="List">
+        <Option type="List" name="RTYPE">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="6" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="6" type="int" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="native:alignsingleraster_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+    <Option type="Map" name="native:alignsingleraster_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="native:alignsingleraster" type="QString"/>
-      <Option name="color" value="" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1232" type="double"/>
-        <Option name="component_pos_y" value="688" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="native:alignsingleraster" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1232" type="double" name="component_pos_x"/>
+        <Option value="688" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option name="component_description" value="Align raster" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="700" type="double"/>
-      <Option name="component_pos_y" value="626" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="### 8. Calculate Density Binary Plot / Resample WD to 2m" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="614" type="double" name="component_pos_x"/>
+      <Option value="645" type="double" name="component_pos_y"/>
+      <Option value="388" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option name="id" value="native:alignsingleraster_1" type="QString"/>
+      <Option value="native:alignsingleraster_1" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="CELL_SIZE_X" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CELL_SIZE_X">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="CELL_SIZE_Y" type="List">
+        <Option type="List" name="CELL_SIZE_Y">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="CRS" type="List">
+        <Option type="List" name="CRS">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="EXTENT" type="List">
+        <Option type="List" name="EXTENT">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="GRID_OFFSET_X" type="List">
+        <Option type="List" name="GRID_OFFSET_X">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="GRID_OFFSET_Y" type="List">
+        <Option type="List" name="GRID_OFFSET_Y">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" value="gdal:rastercalculator_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option value="gdal:rastercalculator_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="REFERENCE_LAYER" type="List">
+        <Option type="List" name="REFERENCE_LAYER">
           <Option type="Map">
-            <Option name="child_id" value="pdal:density_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option value="pdal:density_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="RESAMPLING_METHOD" type="List">
+        <Option type="List" name="RESAMPLING_METHOD">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="0" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
           </Option>
         </Option>
-        <Option name="RESCALE" type="List">
+        <Option type="List" name="RESCALE">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="pdal:density_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+    <Option type="Map" name="native:modelerrastercalc_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="pdal:density" type="QString"/>
-      <Option name="color" value="" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1158" type="double"/>
-        <Option name="component_pos_y" value="568" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="native:modelerrastercalc" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1232" type="double" name="component_pos_x"/>
+        <Option value="688" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option name="component_description" value="### 7. Calculate Density" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="170" type="double"/>
-      <Option name="component_pos_y" value="633" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="### 8. Calculate Density Binary Plot / Select 1.5 &lt; WD &lt; 2.5" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="822.5" type="double" name="component_pos_x"/>
+      <Option value="721" type="double" name="component_pos_y"/>
+      <Option value="391" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option name="id" value="pdal:density_1" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="/QC/topobathy_2m_density.tif" type="Map">
-          <Option name="child_id" value="pdal:density_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
-          </Option>
-          <Option name="component_description" value="/QC/topobathy_2m_density.tif" type="QString"/>
-          <Option name="component_height" value="38" type="double"/>
-          <Option name="component_pos_x" value="320" type="double"/>
-          <Option name="component_pos_y" value="710" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
-          <Option name="default_value" type="Map">
-            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
-            <Option name="create_options" type="Map">
-              <Option name="fileEncoding" value="windows-1252" type="QString"/>
-            </Option>
-            <Option name="sink" type="Map">
-              <Option name="active" value="true" type="bool"/>
-              <Option name="type" value="1" type="int"/>
-              <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_2m_density.tif" type="QString"/>
-            </Option>
-          </Option>
-          <Option name="mandatory" value="true" type="bool"/>
-          <Option name="name" value="/QC/topobathy_2m_density.tif" type="QString"/>
-          <Option name="output_name" value="OUTPUT" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
-        </Option>
-      </Option>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="FILTER_EXPRESSION" type="List">
+      <Option value="native:modelerrastercalc_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CELL_SIZE">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="Classification = 2 OR Classification = 40" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="FILTER_EXTENT" type="List">
+        <Option type="List" name="CRS">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="alb_copc_pointcloudvpc" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="EXPRESSION">
           <Option type="Map">
-            <Option name="parameter_name" value="alb_copc_pointcloudvpc" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value=" if ( &quot;A@1&quot; >= 0.5 AND &quot;A@1&quot; &lt;= 2.5,1,0)" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="ORIGIN_X" type="List">
+        <Option type="List" name="EXTENT">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="ORIGIN_Y" type="List">
+        <Option type="List" name="LAYERS">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
-          </Option>
-        </Option>
-        <Option name="RESOLUTION" type="List">
-          <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="2" type="double"/>
-          </Option>
-        </Option>
-        <Option name="TILE_SIZE" type="List">
-          <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1000" type="int"/>
+            <Option value="native:alignsingleraster_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="pdal:exportraster_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+    <Option type="Map" name="native:modelerrastercalc_2">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="pdal:exportraster" type="QString"/>
-      <Option name="color" value="" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="386" type="double"/>
-        <Option name="component_pos_y" value="179" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="native:modelerrastercalc" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1343.5" type="double" name="component_pos_x"/>
+        <Option value="722" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option name="component_description" value="### 3. Build Topobaty DTM" type="QString"/>
-      <Option name="component_height" value="72" type="double"/>
-      <Option name="component_pos_x" value="413" type="double"/>
-      <Option name="component_pos_y" value="113" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="### 8. Calculate Density Binary Plot / Select Density > 20" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="821.25" type="double" name="component_pos_x"/>
+      <Option value="807" type="double" name="component_pos_y"/>
+      <Option value="386.5" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option name="id" value="pdal:exportraster_1" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="/QC/topobathy_1m_dtm.tif" type="Map">
-          <Option name="child_id" value="pdal:exportraster_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
-          </Option>
-          <Option name="component_description" value="/QC/topobathy_1m_dtm.tif" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="734" type="double"/>
-          <Option name="component_pos_y" value="152" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
-          <Option name="default_value" type="Map">
-            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
-            <Option name="create_options" type="Map">
-              <Option name="fileEncoding" value="windows-1252" type="QString"/>
-            </Option>
-            <Option name="sink" type="Map">
-              <Option name="active" value="true" type="bool"/>
-              <Option name="type" value="1" type="int"/>
-              <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_1m_dtm.tif" type="QString"/>
-            </Option>
-          </Option>
-          <Option name="mandatory" value="true" type="bool"/>
-          <Option name="name" value="/QC/topobathy_1m_dtm.tif" type="QString"/>
-          <Option name="output_name" value="OUTPUT" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
-        </Option>
-      </Option>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="ATTRIBUTE" type="List">
+      <Option value="native:modelerrastercalc_2" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CELL_SIZE">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="Z" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="FILTER_EXPRESSION" type="List">
+        <Option type="List" name="CRS">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="Classification = 2 OR Classification = 40" type="QString"/>
+            <Option value="alb_copc_pointcloudvpc" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="FILTER_EXTENT" type="List">
+        <Option type="List" name="EXPRESSION">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="&quot;A@1&quot; >= 20" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="EXTENT">
           <Option type="Map">
-            <Option name="parameter_name" value="alb_copc_pointcloudvpc" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="ORIGIN_X" type="List">
+        <Option type="List" name="LAYERS">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
-          </Option>
-        </Option>
-        <Option name="ORIGIN_Y" type="List">
-          <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
-          </Option>
-        </Option>
-        <Option name="RESOLUTION" type="List">
-          <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1" type="double"/>
-          </Option>
-        </Option>
-        <Option name="TILE_SIZE" type="List">
-          <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1000" type="int"/>
+            <Option value="pdal:density_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="pdal:exportrastertin_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+    <Option type="Map" name="native:rasterbooleanand_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="pdal:exportrastertin" type="QString"/>
-      <Option name="color" value="" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="262" type="double"/>
-        <Option name="component_pos_y" value="374" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="native:rasterbooleanand" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1343.5" type="double" name="component_pos_x"/>
+        <Option value="811" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option name="component_description" value="### 4. Build Watersurface" type="QString"/>
-      <Option name="component_height" value="68" type="double"/>
-      <Option name="component_pos_x" value="253" type="double"/>
-      <Option name="component_pos_y" value="235" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="Selection WD AND Selection Density" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="1183" type="double" name="component_pos_x"/>
+      <Option value="777" type="double" name="component_pos_y"/>
+      <Option value="270" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option name="id" value="pdal:exportrastertin_1" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="/QC/topobathy_1m_watersurface.tif" type="Map">
-          <Option name="child_id" value="pdal:exportrastertin_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="native:rasterbooleanand_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="topobathy_2m_density_OK_at_2m.tif">
+          <Option value="native:rasterbooleanand_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
           </Option>
-          <Option name="component_description" value="/QC/topobathy_1m_watersurface.tif" type="QString"/>
-          <Option name="component_height" value="40" type="double"/>
-          <Option name="component_pos_x" value="256" type="double"/>
-          <Option name="component_pos_y" value="333" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
-          <Option name="default_value" type="Map">
-            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
-            <Option name="create_options" type="Map">
-              <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option value="topobathy_2m_density_OK_at_2m.tif" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="1455" type="double" name="component_pos_x"/>
+          <Option value="675" type="double" name="component_pos_y"/>
+          <Option value="270" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="windows-1252" type="QString" name="fileEncoding"/>
             </Option>
-            <Option name="sink" type="Map">
-              <Option name="active" value="true" type="bool"/>
-              <Option name="type" value="1" type="int"/>
-              <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_1m_watersurface.tif" type="QString"/>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="" type="QString" name="val"/>
             </Option>
           </Option>
-          <Option name="mandatory" value="true" type="bool"/>
-          <Option name="name" value="/QC/topobathy_1m_watersurface.tif" type="QString"/>
-          <Option name="output_name" value="OUTPUT" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="topobathy_2m_density_OK_at_2m.tif" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="FILTER_EXPRESSION" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DATA_TYPE">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="Classification = 2 OR Classification = 41" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="5" type="int" name="static_value"/>
           </Option>
         </Option>
-        <Option name="FILTER_EXTENT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="native:modelerrastercalc_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+          <Option type="Map">
+            <Option value="native:modelerrastercalc_2" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="NODATA_AS_FALSE">
           <Option type="Map">
-            <Option name="parameter_name" value="alb_copc_pointcloudvpc" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
           </Option>
         </Option>
-        <Option name="ORIGIN_X" type="List">
+        <Option type="List" name="NO_DATA">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="-9999" type="double" name="static_value"/>
           </Option>
         </Option>
-        <Option name="ORIGIN_Y" type="List">
+        <Option type="List" name="REF_LAYER">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option value="native:modelerrastercalc_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="RESOLUTION" type="List">
+      </Option>
+    </Option>
+    <Option type="Map" name="pdal:density_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="pdal:density" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1158" type="double" name="component_pos_x"/>
+        <Option value="568" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="### 7. Calculate Density" type="QString" name="component_description"/>
+      <Option value="39" type="double" name="component_height"/>
+      <Option value="202.5" type="double" name="component_pos_x"/>
+      <Option value="580.5" type="double" name="component_pos_y"/>
+      <Option value="195" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="pdal:density_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="/QC/topobathy_2m_density.tif">
+          <Option value="pdal:density_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="/QC/topobathy_2m_density.tif" type="QString" name="component_description"/>
+          <Option value="33" type="double" name="component_height"/>
+          <Option value="1452.5" type="double" name="component_pos_x"/>
+          <Option value="523.5" type="double" name="component_pos_y"/>
+          <Option value="275" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="windows-1252" type="QString" name="fileEncoding"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_2m_density.tif" type="QString" name="val"/>
+            </Option>
+          </Option>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="/QC/topobathy_2m_density.tif" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FILTER_EXPRESSION">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1" type="double"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="Classification = 2 OR Classification = 40" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="TILE_SIZE" type="List">
+        <Option type="List" name="FILTER_EXTENT">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1000" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="alb_copc_pointcloudvpc" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ORIGIN_X">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ORIGIN_Y">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESOLUTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="2" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TILE_SIZE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1000" type="int" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="pdal:exportraster_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="pdal:exportraster" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="386" type="double" name="component_pos_x"/>
+        <Option value="179" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="### 3. Build Topobaty DTM" type="QString" name="component_description"/>
+      <Option value="43" type="double" name="component_height"/>
+      <Option value="427.5" type="double" name="component_pos_x"/>
+      <Option value="98.5" type="double" name="component_pos_y"/>
+      <Option value="224.99999999999997" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="pdal:exportraster_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="/QC/topobathy_1m_dtm.tif">
+          <Option value="pdal:exportraster_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="/QC/topobathy_1m_dtm.tif" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="1438.5" type="double" name="component_pos_x"/>
+          <Option value="151" type="double" name="component_pos_y"/>
+          <Option value="233" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="windows-1252" type="QString" name="fileEncoding"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_1m_dtm.tif" type="QString" name="val"/>
+            </Option>
+          </Option>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="/QC/topobathy_1m_dtm.tif" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ATTRIBUTE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="Z" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FILTER_EXPRESSION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="Classification = 2 OR Classification = 40" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FILTER_EXTENT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="alb_copc_pointcloudvpc" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ORIGIN_X">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ORIGIN_Y">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESOLUTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TILE_SIZE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1000" type="int" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="pdal:exportrastertin_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="pdal:exportrastertin" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="262" type="double" name="component_pos_x"/>
+        <Option value="374" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="### 4. Build Watersurface" type="QString" name="component_description"/>
+      <Option value="39" type="double" name="component_height"/>
+      <Option value="256.5" type="double" name="component_pos_x"/>
+      <Option value="220.5" type="double" name="component_pos_y"/>
+      <Option value="206.99999999999997" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="pdal:exportrastertin_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="/QC/topobathy_1m_watersurface.tif">
+          <Option value="pdal:exportrastertin_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="/QC/topobathy_1m_watersurface.tif" type="QString" name="component_description"/>
+          <Option value="33" type="double" name="component_height"/>
+          <Option value="1446" type="double" name="component_pos_x"/>
+          <Option value="191.5" type="double" name="component_pos_y"/>
+          <Option value="250" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="windows-1252" type="QString" name="fileEncoding"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_1m_watersurface.tif" type="QString" name="val"/>
+            </Option>
+          </Option>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="/QC/topobathy_1m_watersurface.tif" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FILTER_EXPRESSION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="Classification = 2 OR Classification = 41" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FILTER_EXTENT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="alb_copc_pointcloudvpc" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ORIGIN_X">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ORIGIN_Y">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESOLUTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TILE_SIZE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1000" type="int" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
-  <Option name="designerParameterValues" type="Map">
-    <Option name="alb_copc_pointcloudvpc" value="C:/_SANDBOX/20240311_ALB/Dev/QC/liten_psky.vpc" type="QString"/>
-    <Option name="qctopobathy_1m_dtmtif" type="QgsProcessingOutputLayerDefinition">
+  <Option type="Map" name="designerParameterValues">
+    <Option value="C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/alb_copc_pointcloud.vpc" type="QString" name="alb_copc_pointcloudvpc"/>
+    <Option type="QgsProcessingOutputLayerDefinition" name="qctopobathy_1m_dtmtif">
       <Option type="Map">
-        <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        <Option type="Map" name="create_options">
+          <Option value="windows-1252" type="QString" name="fileEncoding"/>
         </Option>
-        <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="C:/_SANDBOX/20240311_ALB/Dev/QC/topobathy_1m_dtm.tif" type="QString"/>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/topobathy_1m_dtm.tif" type="QString" name="val"/>
         </Option>
       </Option>
     </Option>
-    <Option name="qctopobathy_1m_watersurfacetif" type="QgsProcessingOutputLayerDefinition">
+    <Option type="QgsProcessingOutputLayerDefinition" name="qctopobathy_1m_watersurfacetif">
       <Option type="Map">
-        <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        <Option type="Map" name="create_options">
+          <Option value="windows-1252" type="QString" name="fileEncoding"/>
         </Option>
-        <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="C:/_SANDBOX/20240311_ALB/Dev/QC/topobathy_1m_watersurface.tif" type="QString"/>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/topobathy_1m_watersurface.tif" type="QString" name="val"/>
         </Option>
       </Option>
     </Option>
-    <Option name="qctopobathy_2m_densitytif" type="QgsProcessingOutputLayerDefinition">
+    <Option type="QgsProcessingOutputLayerDefinition" name="qctopobathy_2m_densitytif">
       <Option type="Map">
-        <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        <Option type="Map" name="create_options">
+          <Option value="windows-1252" type="QString" name="fileEncoding"/>
         </Option>
-        <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="C:/_SANDBOX/20240311_ALB/Dev/QC/topobathy_2m_density.tif" type="QString"/>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/topobathy_2m_density.tif" type="QString" name="val"/>
         </Option>
       </Option>
     </Option>
-    <Option name="qcwaterdepth_1mshp" type="QgsProcessingOutputLayerDefinition">
+    <Option type="QgsProcessingOutputLayerDefinition" name="qcwaterdepth_1mshp">
       <Option type="Map">
-        <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        <Option type="Map" name="create_options">
+          <Option value="windows-1252" type="QString" name="fileEncoding"/>
         </Option>
-        <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="C:/_SANDBOX/20240311_ALB/Dev/QC/waterdepth_1m.shp" type="QString"/>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/waterdepth_1m.shp" type="QString" name="val"/>
         </Option>
       </Option>
     </Option>
-    <Option name="qcwaterdepth_1mtif" type="QgsProcessingOutputLayerDefinition">
+    <Option type="QgsProcessingOutputLayerDefinition" name="qcwaterdepth_1mtif">
       <Option type="Map">
-        <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        <Option type="Map" name="create_options">
+          <Option value="windows-1252" type="QString" name="fileEncoding"/>
         </Option>
-        <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="C:/_SANDBOX/20240311_ALB/Dev/QC/waterdepth_1m.tif" type="QString"/>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/waterdepth_1m.tif" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="topobathy_2m_density_ok_at_2mtif">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="windows-1252" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="C:/_SANDBOX/20240311_ALB/41939_Lidar_Nord_ALB_Fauske/QC/topobathy_2m_density_OK_at_2m.tif" type="QString" name="val"/>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
-  <Option name="internal_version" value="Version2" type="QString"/>
+  <Option value="Version2" type="QString" name="internal_version"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" value="" type="QString"/>
-  <Option name="model_name" value="ALB_QC_v2" type="QString"/>
-  <Option name="outputGroup" value="" type="QString"/>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="ALB_QC_v2" type="QString" name="model_name"/>
+  <Option value="" type="QString" name="outputGroup"/>
   <Option name="outputOrder"/>
-  <Option name="parameterDefinitions" type="Map">
-    <Option name="alb_copc_pointcloudvpc" type="Map">
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="alb_copc_pointcloud.vpc" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="alb_copc_pointcloudvpc">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="alb_copc_pointcloud.vpc" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
       <Option name="metadata"/>
-      <Option name="name" value="alb_copc_pointcloudvpc" type="QString"/>
-      <Option name="parameter_type" value="pointcloud" type="QString"/>
+      <Option value="alb_copc_pointcloudvpc" type="QString" name="name"/>
+      <Option value="pointcloud" type="QString" name="parameter_type"/>
     </Option>
-    <Option name="qctopobathy_1m_dtmtif" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="default" type="QgsProcessingOutputLayerDefinition">
+    <Option type="Map" name="qctopobathy_1m_dtmtif">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
         <Option type="Map">
-          <Option name="create_options" type="Map">
-            <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option type="Map" name="create_options">
+            <Option value="windows-1252" type="QString" name="fileEncoding"/>
           </Option>
-          <Option name="sink" type="Map">
-            <Option name="active" value="true" type="bool"/>
-            <Option name="type" value="1" type="int"/>
-            <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_1m_dtm.tif" type="QString"/>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_1m_dtm.tif" type="QString" name="val"/>
           </Option>
         </Option>
       </Option>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="/QC/topobathy_1m_dtm.tif" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
-      <Option name="metadata" type="Map">
-        <Option name="_modelChildId" value="pdal:exportraster_1" type="QString"/>
-        <Option name="_modelChildOutputName" value="/QC/topobathy_1m_dtm.tif" type="QString"/>
-        <Option name="_modelChildProvider" value="pdal" type="QString"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="/QC/topobathy_1m_dtm.tif" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="pdal:exportraster_1" type="QString" name="_modelChildId"/>
+        <Option value="/QC/topobathy_1m_dtm.tif" type="QString" name="_modelChildOutputName"/>
+        <Option value="pdal" type="QString" name="_modelChildProvider"/>
       </Option>
-      <Option name="name" value="qctopobathy_1m_dtmtif" type="QString"/>
-      <Option name="parameter_type" value="rasterDestination" type="QString"/>
-      <Option name="supports_non_file_outputs" value="false" type="bool"/>
+      <Option value="qctopobathy_1m_dtmtif" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
     </Option>
-    <Option name="qctopobathy_1m_watersurfacetif" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="default" type="QgsProcessingOutputLayerDefinition">
+    <Option type="Map" name="qctopobathy_1m_watersurfacetif">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
         <Option type="Map">
-          <Option name="create_options" type="Map">
-            <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option type="Map" name="create_options">
+            <Option value="windows-1252" type="QString" name="fileEncoding"/>
           </Option>
-          <Option name="sink" type="Map">
-            <Option name="active" value="true" type="bool"/>
-            <Option name="type" value="1" type="int"/>
-            <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_1m_watersurface.tif" type="QString"/>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_1m_watersurface.tif" type="QString" name="val"/>
           </Option>
         </Option>
       </Option>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="/QC/topobathy_1m_watersurface.tif" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
-      <Option name="metadata" type="Map">
-        <Option name="_modelChildId" value="pdal:exportrastertin_1" type="QString"/>
-        <Option name="_modelChildOutputName" value="/QC/topobathy_1m_watersurface.tif" type="QString"/>
-        <Option name="_modelChildProvider" value="pdal" type="QString"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="/QC/topobathy_1m_watersurface.tif" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="pdal:exportrastertin_1" type="QString" name="_modelChildId"/>
+        <Option value="/QC/topobathy_1m_watersurface.tif" type="QString" name="_modelChildOutputName"/>
+        <Option value="pdal" type="QString" name="_modelChildProvider"/>
       </Option>
-      <Option name="name" value="qctopobathy_1m_watersurfacetif" type="QString"/>
-      <Option name="parameter_type" value="rasterDestination" type="QString"/>
-      <Option name="supports_non_file_outputs" value="false" type="bool"/>
+      <Option value="qctopobathy_1m_watersurfacetif" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
     </Option>
-    <Option name="qctopobathy_2m_densitytif" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="default" type="QgsProcessingOutputLayerDefinition">
+    <Option type="Map" name="qctopobathy_2m_densitytif">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
         <Option type="Map">
-          <Option name="create_options" type="Map">
-            <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option type="Map" name="create_options">
+            <Option value="windows-1252" type="QString" name="fileEncoding"/>
           </Option>
-          <Option name="sink" type="Map">
-            <Option name="active" value="true" type="bool"/>
-            <Option name="type" value="1" type="int"/>
-            <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_2m_density.tif" type="QString"/>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/topobathy_2m_density.tif" type="QString" name="val"/>
           </Option>
         </Option>
       </Option>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="/QC/topobathy_2m_density.tif" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
-      <Option name="metadata" type="Map">
-        <Option name="_modelChildId" value="pdal:density_1" type="QString"/>
-        <Option name="_modelChildOutputName" value="/QC/topobathy_2m_density.tif" type="QString"/>
-        <Option name="_modelChildProvider" value="pdal" type="QString"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="/QC/topobathy_2m_density.tif" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="pdal:density_1" type="QString" name="_modelChildId"/>
+        <Option value="/QC/topobathy_2m_density.tif" type="QString" name="_modelChildOutputName"/>
+        <Option value="pdal" type="QString" name="_modelChildProvider"/>
       </Option>
-      <Option name="name" value="qctopobathy_2m_densitytif" type="QString"/>
-      <Option name="parameter_type" value="rasterDestination" type="QString"/>
-      <Option name="supports_non_file_outputs" value="false" type="bool"/>
+      <Option value="qctopobathy_2m_densitytif" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
     </Option>
-    <Option name="qcwaterdepth_1mshp" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="data_type" value="1" type="int"/>
-      <Option name="default" type="QgsProcessingOutputLayerDefinition">
+    <Option type="Map" name="qcwaterdepth_1mshp">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="1" type="int" name="data_type"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
         <Option type="Map">
-          <Option name="create_options" type="Map">
-            <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option type="Map" name="create_options">
+            <Option value="windows-1252" type="QString" name="fileEncoding"/>
           </Option>
-          <Option name="sink" type="Map">
-            <Option name="active" value="true" type="bool"/>
-            <Option name="type" value="1" type="int"/>
-            <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/waterdepth_1m.shp" type="QString"/>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/waterdepth_1m.shp" type="QString" name="val"/>
           </Option>
         </Option>
       </Option>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="/QC/waterdepth_1m.shp" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
-      <Option name="metadata" type="Map">
-        <Option name="_modelChildId" value="gdal:contour_1" type="QString"/>
-        <Option name="_modelChildOutputName" value="/QC/waterdepth_1m.shp" type="QString"/>
-        <Option name="_modelChildProvider" value="gdal" type="QString"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="/QC/waterdepth_1m.shp" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="gdal:contour_1" type="QString" name="_modelChildId"/>
+        <Option value="/QC/waterdepth_1m.shp" type="QString" name="_modelChildOutputName"/>
+        <Option value="gdal" type="QString" name="_modelChildProvider"/>
       </Option>
-      <Option name="name" value="qcwaterdepth_1mshp" type="QString"/>
-      <Option name="parameter_type" value="vectorDestination" type="QString"/>
-      <Option name="supports_non_file_outputs" value="false" type="bool"/>
+      <Option value="qcwaterdepth_1mshp" type="QString" name="name"/>
+      <Option value="vectorDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
     </Option>
-    <Option name="qcwaterdepth_1mtif" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="default" type="QgsProcessingOutputLayerDefinition">
+    <Option type="Map" name="qcwaterdepth_1mtif">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
         <Option type="Map">
-          <Option name="create_options" type="Map">
-            <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option type="Map" name="create_options">
+            <Option value="windows-1252" type="QString" name="fileEncoding"/>
           </Option>
-          <Option name="sink" type="Map">
-            <Option name="active" value="true" type="bool"/>
-            <Option name="type" value="1" type="int"/>
-            <Option name="val" value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/waterdepth_1m.tif" type="QString"/>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="C:/Users/malchr/AppData/Roaming/QGIS/QGIS3/profiles/default/processing/outputs/waterdepth_1m.tif" type="QString" name="val"/>
           </Option>
         </Option>
       </Option>
-      <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="/QC/waterdepth_1m.tif" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
-      <Option name="metadata" type="Map">
-        <Option name="_modelChildId" value="gdal:rastercalculator_1" type="QString"/>
-        <Option name="_modelChildOutputName" value="/QC/waterdepth_1m.tif" type="QString"/>
-        <Option name="_modelChildProvider" value="gdal" type="QString"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="/QC/waterdepth_1m.tif" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="gdal:rastercalculator_1" type="QString" name="_modelChildId"/>
+        <Option value="/QC/waterdepth_1m.tif" type="QString" name="_modelChildOutputName"/>
+        <Option value="gdal" type="QString" name="_modelChildProvider"/>
       </Option>
-      <Option name="name" value="qcwaterdepth_1mtif" type="QString"/>
-      <Option name="parameter_type" value="rasterDestination" type="QString"/>
-      <Option name="supports_non_file_outputs" value="false" type="bool"/>
+      <Option value="qcwaterdepth_1mtif" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="topobathy_2m_density_ok_at_2mtif">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
+        <Option type="Map">
+          <Option type="Map" name="create_options">
+            <Option value="windows-1252" type="QString" name="fileEncoding"/>
+          </Option>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="" type="QString" name="val"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="topobathy_2m_density_OK_at_2m.tif" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="native:rasterbooleanand_1" type="QString" name="_modelChildId"/>
+        <Option value="topobathy_2m_density_OK_at_2m.tif" type="QString" name="_modelChildOutputName"/>
+        <Option value="native" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="topobathy_2m_density_ok_at_2mtif" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
-  <Option name="parameters" type="Map">
-    <Option name="alb_copc_pointcloudvpc" type="Map">
-      <Option name="color" value="" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="265" type="double"/>
-        <Option name="component_pos_y" value="12" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="alb_copc_pointcloudvpc">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="265" type="double" name="component_pos_x"/>
+        <Option value="12" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option name="component_description" value="alb_copc_pointcloudvpc" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="116" type="double"/>
-      <Option name="component_pos_y" value="60" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
-      <Option name="name" value="alb_copc_pointcloudvpc" type="QString"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="alb_copc_pointcloudvpc" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="116" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="alb_copc_pointcloudvpc" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
     </Option>
   </Option>
 </Option>
