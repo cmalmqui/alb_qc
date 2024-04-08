@@ -2,7 +2,7 @@
 Model exported as python.
 Name : ALB_QC_v2
 Group : 
-With QGIS : 33404
+With QGIS : 33600
 """
 
 from qgis.core import QgsProcessing
@@ -32,6 +32,24 @@ class Alb_qc_v2(QgsProcessingAlgorithm):
         results = {}
         outputs = {}
 
+        # ### 7. Calculate Density
+        alg_params = {
+            'FILTER_EXPRESSION': 'Classification = 2 OR Classification = 40',
+            'FILTER_EXTENT': None,
+            'INPUT': parameters['alb_copc_pointcloudvpc'],
+            'ORIGIN_X': None,
+            'ORIGIN_Y': None,
+            'RESOLUTION': 2,
+            'TILE_SIZE': 1000,
+            'OUTPUT': parameters['Qctopobathy_2m_densitytif']
+        }
+        outputs['7CalculateDensity'] = processing.run('pdal:density', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
+        results['Qctopobathy_2m_densitytif'] = outputs['7CalculateDensity']['OUTPUT']
+
+        feedback.setCurrentStep(1)
+        if feedback.isCanceled():
+            return {}
+
         # ### 4. Build Watersurface
         alg_params = {
             'FILTER_EXPRESSION': 'Classification = 2 OR Classification = 41',
@@ -46,7 +64,7 @@ class Alb_qc_v2(QgsProcessingAlgorithm):
         outputs['4BuildWatersurface'] = processing.run('pdal:exportrastertin', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
         results['Qctopobathy_1m_watersurfacetif'] = outputs['4BuildWatersurface']['OUTPUT']
 
-        feedback.setCurrentStep(1)
+        feedback.setCurrentStep(2)
         if feedback.isCanceled():
             return {}
 
@@ -65,7 +83,22 @@ class Alb_qc_v2(QgsProcessingAlgorithm):
         outputs['3BuildTopobatyDtm'] = processing.run('pdal:exportraster', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
         results['Qctopobathy_1m_dtmtif'] = outputs['3BuildTopobatyDtm']['OUTPUT']
 
-        feedback.setCurrentStep(2)
+        feedback.setCurrentStep(3)
+        if feedback.isCanceled():
+            return {}
+
+        # ### 8. Calculate Density Binary Plot / Select Density > 20
+        alg_params = {
+            'CELL_SIZE': None,
+            'CRS': parameters['alb_copc_pointcloudvpc'],
+            'EXPRESSION': '"A@1" >= 20',
+            'EXTENT': None,
+            'LAYERS': outputs['7CalculateDensity']['OUTPUT'],
+            'OUTPUT': QgsProcessing.TEMPORARY_OUTPUT
+        }
+        outputs['8CalculateDensityBinaryPlotSelectDensity20'] = processing.run('native:modelerrastercalc', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
+
+        feedback.setCurrentStep(4)
         if feedback.isCanceled():
             return {}
 
@@ -89,31 +122,13 @@ class Alb_qc_v2(QgsProcessingAlgorithm):
             'NO_DATA': None,
             'OPTIONS': None,
             'PROJWIN': None,
-            'RTYPE': 6,  # Float64
+            'RTYPE': 5,  # Float32
             'OUTPUT': parameters['Qcwaterdepth_1mtif']
         }
         outputs['5CalculateWaterDepth'] = processing.run('gdal:rastercalculator', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
         results['Qcwaterdepth_1mtif'] = outputs['5CalculateWaterDepth']['OUTPUT']
 
-        feedback.setCurrentStep(3)
-        if feedback.isCanceled():
-            return {}
-
-        # ### 7. Calculate Density
-        alg_params = {
-            'FILTER_EXPRESSION': 'Classification = 2 OR Classification = 40',
-            'FILTER_EXTENT': None,
-            'INPUT': parameters['alb_copc_pointcloudvpc'],
-            'ORIGIN_X': None,
-            'ORIGIN_Y': None,
-            'RESOLUTION': 2,
-            'TILE_SIZE': 1000,
-            'OUTPUT': parameters['Qctopobathy_2m_densitytif']
-        }
-        outputs['7CalculateDensity'] = processing.run('pdal:density', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
-        results['Qctopobathy_2m_densitytif'] = outputs['7CalculateDensity']['OUTPUT']
-
-        feedback.setCurrentStep(4)
+        feedback.setCurrentStep(5)
         if feedback.isCanceled():
             return {}
 
@@ -133,22 +148,22 @@ class Alb_qc_v2(QgsProcessingAlgorithm):
         }
         outputs['8CalculateDensityBinaryPlotResampleWdTo2m'] = processing.run('native:alignsingleraster', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
 
-        feedback.setCurrentStep(5)
+        feedback.setCurrentStep(6)
         if feedback.isCanceled():
             return {}
 
-        # ### 8. Calculate Density Binary Plot / Select Density > 20
+        # ### 8. Calculate Density Binary Plot / Select 1.5 < WD < 2.5
         alg_params = {
             'CELL_SIZE': None,
             'CRS': parameters['alb_copc_pointcloudvpc'],
-            'EXPRESSION': '"A@1" >= 20',
+            'EXPRESSION': ' if ( "A@1" >= 0.5 AND "A@1" <= 2.5,1,0)',
             'EXTENT': None,
-            'LAYERS': outputs['7CalculateDensity']['OUTPUT'],
+            'LAYERS': outputs['8CalculateDensityBinaryPlotResampleWdTo2m']['OUTPUT'],
             'OUTPUT': QgsProcessing.TEMPORARY_OUTPUT
         }
-        outputs['8CalculateDensityBinaryPlotSelectDensity20'] = processing.run('native:modelerrastercalc', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
+        outputs['8CalculateDensityBinaryPlotSelect15Wd25'] = processing.run('native:modelerrastercalc', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
 
-        feedback.setCurrentStep(6)
+        feedback.setCurrentStep(7)
         if feedback.isCanceled():
             return {}
 
@@ -167,21 +182,6 @@ class Alb_qc_v2(QgsProcessingAlgorithm):
         }
         outputs['6GenerateDepthContours'] = processing.run('gdal:contour', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
         results['Qcwaterdepth_1mshp'] = outputs['6GenerateDepthContours']['OUTPUT']
-
-        feedback.setCurrentStep(7)
-        if feedback.isCanceled():
-            return {}
-
-        # ### 8. Calculate Density Binary Plot / Select 1.5 < WD < 2.5
-        alg_params = {
-            'CELL_SIZE': None,
-            'CRS': parameters['alb_copc_pointcloudvpc'],
-            'EXPRESSION': ' if ( "A@1" >= 1.5 AND "A@1" <= 2.5,1,0)',
-            'EXTENT': None,
-            'LAYERS': outputs['8CalculateDensityBinaryPlotResampleWdTo2m']['OUTPUT'],
-            'OUTPUT': QgsProcessing.TEMPORARY_OUTPUT
-        }
-        outputs['8CalculateDensityBinaryPlotSelect15Wd25'] = processing.run('native:modelerrastercalc', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
 
         feedback.setCurrentStep(8)
         if feedback.isCanceled():
