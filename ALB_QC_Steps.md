@@ -18,7 +18,7 @@ Abbrivations:
 ## Create QC Folders
 
 - `/QC`
-- `/QC/COPL`
+- `/QC/COPC`
 - `/QC/GRID`
 
 ## Steps
@@ -29,7 +29,7 @@ For faster improved rendering performance in QGIS we'll generate a cloud optimiz
 
   - Tool = **QPT | Point cloud data management | Create COPC**
   - Select laz files
-  - Set output directory to `/QC/COPL/`
+  - Set output directory to `/QC/COPC/`
   - ...wait...
 
 ### 2. Build Virtual Point Cloud (VPC)
@@ -37,7 +37,7 @@ For faster improved rendering performance in QGIS we'll generate a cloud optimiz
 From the COPL LAZ files we'll generate a collector file referencing to each sub tile.
 
   - Tool = **QPT | Point cloud data management | Build virtual point cloud (VPC)**
-  - Select las files from `/QC/COPL/`
+  - Select las files from `/QC/COPC/`
   - Enable calculate boundary polygons
   - Enable calculate statistics
   - Enable build overview point cloud
