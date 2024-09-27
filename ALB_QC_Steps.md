@@ -25,7 +25,7 @@ Abbrivations:
 
 ### 1. Create COPC
 
-For faster improved rendering performance in QGIS we'll generate a cloud optimized version of the point cloud
+For faster rendering in QGIS we'll generate a cloud optimized version of the point cloud:
 
   - Tool = **QPT | Point cloud data management | Create COPC**
   - Select laz files
@@ -103,36 +103,10 @@ From the 2m density plot we'll generate a binary plot with 1 indicating density 
 - Raster Calculation Expression: `if (("topobathy_2m_density@1" >= 20) AND (("waterdepth_1m@1"  >=  0.5) AND ("waterdepth_1m@1"  <=  2.5)),1,0)`
 - Save Result Layer to `/QC/topobathy_2m_density_OK_at_2mDepth.tif`
 
-### 9. Calculate Density Binary Plot 10m Aggregated
+### 9. Calculate Hex Layer (Optional)
 
-Not finished - attempt to generate a binary plot assessing whether 80% of all 2x2 cells within a 10x10 grid >= 20p
-
-#### 9.1 Calculate 2x2 Binary Raster
-
-- Tool = **QGM | Raster > Raster Calculator**
-- Raster Calculation Expression: `if (("topobathy_2m_density@1" >= 20),1,0)`
-- Save Result Layer to `/QC/topobathy_2m_density_OK.tif`
-
-#### 9.2 Generate Reference Raster
-
-- Tool = **QGM | Raster Creation > Create constant raster layer**
-- Extent: `/QC/topobathy_2m_density_OK_at_2m.tif`
-- Pixel Size: 10
-- Constant Value: 1
-- Integer Output
-- Save Result Layer to `/QC/tmp_10mRefGrid.tif`
-
-#### 9.3 Calculate Cell Statistics
-
-- Tool = **QGM | Raster Analysis > Cell statistics**
-- Input: `/QC/topobathy_2m_density_OK.tif`
-- Statistics: Count
-- Ref Layer: `/QC/tmp_10mRefGrid.tif`
-- Save
-
-#### 10. Calculate Hex Layer
-
-In order to make up a AOI showing valid data within the initial AOI we'll generate up a hexbingrid with 2m sides. The below approach uses the pdal density function that will be depreciated in Q2 2024. Must be rewritten asap. 
+In order to make up a AOI showing valid data we'll generate up a hexbingrid with 2m sides. 
+The below approach uses the pdal density function that will be depreciated in versions after v2.6.0.
 
 ```python
 import glob
@@ -143,5 +117,4 @@ lasifiles = glob.glob('*.laz')
 for lasif in tqdm(lasifiles, desc="Processing files"):
     call = 'pdal density '+lasif+' -o '+lasif+'.sqlite -f SQLite --filters.hexbin.edge_size=2'
     subprocess.run(call, shell=True)
-
 ```
