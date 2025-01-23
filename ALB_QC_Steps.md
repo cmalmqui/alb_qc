@@ -3,6 +3,7 @@ This workflow will generate a set of rasters needed to carry out a minimum quali
 
 The workflow is based on QGIS >= 3.36
 ALB delivery according to current version "Produktspesifikasjon Punktsky"
+
 No use of æøå in folderpath
 
 Abbrivations: 
